@@ -14,6 +14,9 @@ post '/pre_race' do
   if Player.check_existing(@player1) == false or Player.check_existing(@player2) == false
     @flag = "Please check the name spelling of Player 1 / Player 2!"
     erb :pre_race
+  elsif @player1 == @player2
+    @flag = "Player 1 and Player 2 cannot be the same person!"
+    erb :pre_race
   else
   	@game = Game.create(done: false)
 

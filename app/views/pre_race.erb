@@ -1,0 +1,21 @@
+<div class="container" align="center">
+  <h1>Player</h1>
+  <p><%= @flag %></p>
+
+  <form action='/pre_race' method='post'>
+    <table width="250px">
+      <tr height="50px">
+        <td width="100px">Player 1:</td>
+        <td><input name='player1' type='text' autofocus value="<%= @player1 %>"></td>
+      </tr>
+      <tr height="50px">
+        <td width="100px">Player 2:</td>
+        <td><input name='player2' type='text' value="<%= @player2 %>"></td>
+      </tr>
+      <tr height="50px">
+        <td colspan = "2" align="right"><input type="submit" name="players" class="button" value="Lets go!"></td>
+      </tr>
+    </table>
+  </form>
+  <a href="../"><button>Main Page</button></a>
+</div>

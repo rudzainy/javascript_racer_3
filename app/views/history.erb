@@ -1,0 +1,22 @@
+<div class="container" align="center">
+  <h1>History</h1>
+  <p><%= @flag %></p>
+
+    <table width="250px">
+      <tr>
+        <th>Race No.</td>
+        <th>Player 1</td>
+        <th>Player 2</td>
+        <th>Duration</td>
+      </tr>
+      <% @race.each do |race| %>
+      <tr>
+        <td><%= race.id %></td>
+        <td><%= Player.find_by(id: race.player1_id).name %><% if race.player1_id == race.winner %><img src="http://graphictorque.com/Item/9aa6ac62-2122-489a-8aa4-43f227d50561-preview.jpg" width="20px" height="20px"><% end %></td>
+        <td><%= Player.find_by(id: race.player2_id).name %><% if race.player2_id == race.winner %><img src="http://graphictorque.com/Item/9aa6ac62-2122-489a-8aa4-43f227d50561-preview.jpg" width="20px" height="20px"><% end %></td>
+        <td><%= race.duration %> seconds</td>
+      </tr>
+      <% end %>
+    </table>
+  <a href="../"><button>Main Page</button></a>
+</div>

@@ -1,0 +1,57 @@
+.racer_table td {
+  background-color: white;
+  height: 50px;
+  width: 100px;
+  border: 1px solid #ccc;
+}
+
+.racer_table td.player1 {
+	background: url('../image/cars.png') no-repeat 0 0;
+	width: 100px;
+	height: 47px;
+}
+
+.racer_table td.player2 {
+	background: url('../image/cars.png') no-repeat 0 -57px;
+	width: 100px;
+	height: 48px;
+}
+
+.game_container {
+	margin: 10px auto;
+	width: 1200px;
+  padding: 0px 20px 20px 20px;
+}
+
+.container {
+	margin: 10px auto;
+	width: 600px;
+  padding: 0px 20px 20px 20px;
+}
+
+.track_label {
+	border-left: none !important;
+	border-bottom: none !important;
+	border-right: none !important;
+	height: 20px !important;
+	text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+h1, h3, .footer{
+  text-align: center;
+}
+
+button {
+	padding: 10px 15px;
+	border-radius: .3rem;
+	background-color: #c0c0c0;
+/*	color: #000;*/
+}
+
+button :disabled { 
+	color: #ccc;
+}
